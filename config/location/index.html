@@ -13,7 +13,7 @@
     
     
       
-        <title>Change Map - DayZ++ Documentation</title>
+        <title>Location Enable / Disable - DayZ++ Documentation</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#change-map" class="md-skip">
+        <a href="#location-enable-disable" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Change Map
+              Location Enable / Disable
             
           </span>
         </div>
@@ -322,11 +322,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../location/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Location Enable / Disable
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Location Enable / Disable
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-feeds" class="md-nav__link">
+    Available Feeds
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -350,21 +391,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../set_map/" class="md-nav__link">
         Change Map
       </a>
-      
     </li>
   
 
@@ -396,6 +427,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-feeds" class="md-nav__link">
+    Available Feeds
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -406,33 +452,65 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/nxck69/dayz-plusplus-docs/edit/master/docs/config/set_map.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/nxck69/dayz-plusplus-docs/edit/master/docs/config/location.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="change-map">Change Map</h1>
+<h1 id="location-enable-disable">Location Enable / Disable</h1>
 <div class="admonition usage">
 <p class="admonition-title">Usage</p>
 </div>
 <blockquote>
-<div class="highlight"><pre><span></span><code>&lt;prefix&gt;(setMap | map) &lt;service alias&gt; &lt;chernarus | livonia&gt;
+<div class="highlight"><pre><span></span><code>&lt;prefix&gt;location &lt;service alias&gt; &lt;feed&gt; &lt;on | off&gt;
+&lt;prefix&gt;location &lt;service alias&gt; &lt;feed&gt; &lt;on | off&gt;
 </code></pre></div>
 </blockquote>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 </div>
 <blockquote>
-<div class="highlight"><pre><span></span><code>!setMap Server1 chernarus
-!map Server1 livonia
+<div class="highlight"><pre><span></span><code>!location Server1 pvp on
+!location Server1 pve off
 </code></pre></div>
 </blockquote>
-<div class="admonition notes">
-<p class="admonition-title">Notes</p>
-</div>
-<ul>
-<li>The map determines wether heatmaps and IZurvive links are for livonia or chernarus</li>
-</ul>
+<h2 id="available-feeds">Available Feeds</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>pvp</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>pve</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>build</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>dismantle</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>place</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>fold</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>mount</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>bury</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>pack</strong></td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
@@ -446,7 +524,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../prefix/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Change Prefix" rel="prev">
+        <a href="../feed_enable/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Feed Enable / Disable" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -455,11 +533,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Change Prefix
+              Feed Enable / Disable
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../prefix/" class="md-footer__link md-footer__link--next" aria-label="Next: Change Prefix" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Change Prefix
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
