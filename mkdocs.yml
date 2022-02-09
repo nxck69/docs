@@ -1,9 +1,9 @@
 site_name: DayZ++ Documentation
 theme: 
   name: 'material'
-  logo: 'https://cdn.discordapp.com/avatars/867376409965363200/bdd21dc8a92be0f0ecb4c26fed7fd55f.png?size=20'
+  logo: 'https://i.postimg.cc/fTQSGv6h/512x-Day-Z-invert.png'
   favicon:
-    'https://cdn.discordapp.com/avatars/867376409965363200/bdd21dc8a92be0f0ecb4c26fed7fd55f.png?size=24'
+    'https://i.postimg.cc/fTQSGv6h/512x-Day-Z-invert.png?size=24'
   features:
     - tabs
     - instant
