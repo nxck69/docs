@@ -2,7 +2,7 @@
 
 ## Configuration Menus
 
-This command allows `Killfeed Admin` to view the bot configuration settings per gameserver service including which modules are enabled/disabled, which channels are set for each feed, and much more informative details such as which role is assigned for verified accounts, which map is being used, service alias and ID, whether the [Casino](../economy/casino.md) commands are enabled and which channel to use them in if defined, and whether you have [Custom Embeds](../custom/custom_embeds.md) enabled or not.
+This command allows `Killfeed Admin` to view the bot configuration settings per gameserver service including which modules are enabled/disabled, which channels are set for each feed, and much more informative details such as which role is assigned for verified accounts, which map is being used, service alias and ID, whether the [Casino](../economy/slots.md) commands are enabled and which channel to use them in if defined, and whether you have [Custom Embeds](../customization/custom_embeds.md) enabled or not.
 
 > #### Command invoke: ```!admin config```
 

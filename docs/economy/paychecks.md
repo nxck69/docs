@@ -31,4 +31,3 @@
 !paycheck list
 !pc list
 ```
-> ![screenshot](../img/paycheck.png)
